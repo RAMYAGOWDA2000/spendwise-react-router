@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
-    <Routes>
+    <BrowserRouter>
       <Route element={<AppLayout />}>
         <Route path="/" element={<Dashboard />} />
         <Route path="/expenses" element={<Expenses />} />
@@ -19,6 +19,6 @@ export default function App() {
         <Route path="/reports" element={<Reports />} />
         <Route path="*" element={<NotFound />} />
       </Route>
-    </Routes>
+    </BrowserRouter>
   );
 }
